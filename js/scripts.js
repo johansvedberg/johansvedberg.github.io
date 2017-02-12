@@ -8,9 +8,8 @@ $(document).ready(function() {
     function startTime() {
         var today = new Date(),
             h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+            m = checkTime(today.getMinutes());
+        document.getElementById('time').innerHTML = h + ":" + m;
         t = setTimeout(function() {
             startTime()
         }, 500);
