@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+$('select').material_select();
 
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;

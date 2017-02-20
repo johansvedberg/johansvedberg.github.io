@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Study Findr</a>
+            <a href="#" class="brand-logo center">Profile</a>
         </div>
     </nav>
 
@@ -20,39 +20,39 @@
 
         <div id="welcome">
             <div class="center">
-              <a href="profile.html">
                 <img src="images/johan.jpg" alt="" class="circle responsive-img">
-                  </a>
 
-            <h5>Välkomen Johan! Klockan är <span id="time"></span>, och du har 0 bokningar. </h5>
-        </div>
-        </div>
-
-        <div class="center">
-
-            <h5>Jag vill:</h5>
-        </div>
-
-        <div class="row">
-            <a href="book.html">
-                <div class="col s12 m6 l6">
-                    <div class="card-panel">
-                        <span class="white-text">Hitta studieplats</span>
-                    </div>
-                </div>
-            </a>
-
-            <div class="col s12 m6 l6">
-                <div class="card-panel">
-                    <span class="white-text">Ha hjälp</span>
-                </div>
             </div>
         </div>
 
-    </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>Välj</option>
+                          <option value="1">InfoCom</option>
+                          <option value="2">Design</option>
+                          <option value="3">Något annat</option>
+                        </select>
+                        <label>Utbildning</label>
+                    </div>
+                </div>
+            </form>
+        </div>
 
 
-    <!--
+        <!--
         <div class="fixed-action-btn toolbar">
             <a class="btn-floating btn-large red">
                 <i class="large material-icons">mode_edit</i>
