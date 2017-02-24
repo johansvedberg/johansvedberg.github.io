@@ -13,22 +13,37 @@ $(document).ready(function() {
         document.getElementById('time').innerHTML = h + ":" + m;
         t = setTimeout(function() {
             startTime()
-        }, 500);
+        }, 10000);
     }
+
+    localStorage.setItem("name", "Johan");
+    localStorage.setItem("bookings", "0");
+
+
+    function setUser() {
+
+        document.getElementById('name').innerHTML = localStorage.getItem("name");
+
+        if (parseInt(localStorage.getItem(bookings)) < 0) {
+            document.getElementById('bookings').innerHTML = 0;
+        } else {
+            document.getElementById('bookings').innerHTML = localStorage.getItem("bookings");
+        }
+
+
+
+    }
+
+
+    function book() {
+        var bookings = parseInt(localStorage.getItem("bookings")) + 1;
+        localStorage.setItem("bookings", bookings)
+        document.getElementById('bookings').innerHTML = bookings;
+    }
+
+
+
     startTime();
-
-
-
-    var cityData = [{city:"Redmond", population:57530},
-        {city:"Atlanta",population:447841},
-        {city:"San Fracisco", population:837442}];
-
-    alasql('CREATE INDEXEDDB DATABASE IF NOT EXISTS geo;\
-        ATTACH INDEXEDDB DATABASE geo; \
-        USE geo; \
-        DROP TABLE IF EXISTS cities; \
-        CREATE TABLE cities; \
-        SELECT * INTO cities FROM ?', [cityData], function(){
-    });
-
+    book();
+    setUser();
 });
