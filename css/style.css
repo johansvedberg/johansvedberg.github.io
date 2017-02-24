@@ -1,5 +1,5 @@
 body {
-    background-color: #e9e9ea;
+    background-color: #dfdbd7;
 
 }
 
@@ -10,6 +10,10 @@ body {
 }
 
 #time{
+
+}
+
+#result{
 
 }
 
@@ -33,4 +37,8 @@ img {
 
 nav {
     background-color: #00569b;
+}
+
+h5{
+text-align: center;
 }
