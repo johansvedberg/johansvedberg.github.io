@@ -16,11 +16,19 @@ $(document).ready(function() {
         }, 10000);
     }
 
-    localStorage.setItem("name", "Johan");
-    localStorage.setItem("bookings", "0");
 
 
     function setUser() {
+
+        if (localStorage.getItem("name") == null) {
+            localStorage.setItem("name", "Johan");
+
+        }
+
+        if (localStorage.getItem("bookings") == null) {
+            localStorage.setItem("bookings", "0");
+
+        }
 
         document.getElementById('name').innerHTML = localStorage.getItem("name");
 
@@ -29,21 +37,22 @@ $(document).ready(function() {
         } else {
             document.getElementById('bookings').innerHTML = localStorage.getItem("bookings");
         }
-
-
-
     }
 
 
     function book() {
-        var bookings = parseInt(localStorage.getItem("bookings")) + 1;
-        localStorage.setItem("bookings", bookings)
-        document.getElementById('bookings').innerHTML = bookings;
+        localStorage.setItem("bookings", parseInt(localStorage.getItem("bookings")) + 1);
+
     }
+
+    $("#bookButton").click(function(){
+        book();
+        Materialize.toast('Rum bokat!', 2000);
+       })
 
 
 
     startTime();
-    book();
+    //  book();
     setUser();
 });
