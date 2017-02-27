@@ -16,8 +16,6 @@ $(document).ready(function() {
         }, 10000);
     }
 
-
-
     function setUser() {
 
         if (localStorage.getItem("name") == null) {
@@ -53,6 +51,5 @@ $(document).ready(function() {
 
 
     startTime();
-    //  book();
     setUser();
 });
