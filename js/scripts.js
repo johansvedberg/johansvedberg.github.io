@@ -46,6 +46,7 @@ $(document).ready(function() {
     $("#bookButton").click(function(){
         book();
         Materialize.toast('Rum bokat!', 2000);
+        navigator.vibrate(500);
        })
 
 
