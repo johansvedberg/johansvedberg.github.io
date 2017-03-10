@@ -1,6 +1,5 @@
 body {
     background-color: #dfdbd7;
-
 }
 
 .center {
@@ -9,34 +8,33 @@ body {
     padding: 10px;
 }
 
-#time{
+.buttons {
 
+padding-top: 6em;
 }
 
-#result{
+#time {}
 
+#result {}
+
+
+#welcome {
+    padding-top: 2em;
 }
 
-#welcome{
-  padding-top: 2em;
-}
-
-.card-panel{
-  font-size: 2em;
-  text-align: center;
-  background-color: #dd6f00;
+.card-panel {
+    font-size: 2em;
+    text-align: center;
+    background-color: #dd6f00;
 }
 
 #profile {
-    max-width: 100%;
-    max-height: 20%;
-    height: 10em;
-    width: 10em;
-
+    max-width: 150px;
+    max-height: 150px;
 }
 
-#map{
-  display: block;
+#map {
+    display: block;
     margin-left: auto;
     margin-right: auto
 }
@@ -45,6 +43,6 @@ nav {
     background-color: #00569b;
 }
 
-h5{
-text-align: center;
+h5 {
+    text-align: center;
 }
