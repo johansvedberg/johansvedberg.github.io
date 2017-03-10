@@ -52,14 +52,16 @@ $(document).ready(function() {
 
 
     $("#map").click(function() {
-              alert(document.getElementById('map').src);
-        var img1 = "https://johansvedberg.github.io/images/clicked.png",
-            img2 = "https://johansvedberg.github.io/images/notclicked.png";
-        var imgElement = document.getElementById('map');
 
-        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+      if ($("#map").attr("src") == "images/notclicked.png") {
+            $("#map").attr("src", "images/clicked.png");
+
+      }else {
+        $("#map").attr("src", "images/notclicked.png");
+      }
+
         navigator.vibrate(500);
-    })
+    });
 
 
     startTime();
