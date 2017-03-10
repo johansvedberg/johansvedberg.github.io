@@ -37,7 +37,8 @@ padding-top: 6em;
 #map {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-top: 3em;
 }
 
 nav {

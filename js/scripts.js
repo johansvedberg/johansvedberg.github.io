@@ -52,12 +52,12 @@ $(document).ready(function() {
 
 
     $("#map").click(function() {
+              alert(document.getElementById('map').src);
+        var img1 = "file:///Users/johansvedberg/Documents/TNX153/images/clicked.png",
+            img2 = "file:///Users/johansvedberg/Documents/TNX153/images/notclicked.png";
+        var imgElement = document.getElementById('map');
 
-      var img1 = "images/clicked.png",
-       img2 = "images/notclicked.png";
-   var imgElement = document.getElementById('map');
-
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
         navigator.vibrate(500);
     })
 
