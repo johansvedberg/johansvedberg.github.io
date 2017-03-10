@@ -51,6 +51,17 @@ $(document).ready(function() {
     })
 
 
+    $("#map").click(function() {
+
+      var img1 = "images/clicked.png",
+       img2 = "images/notclicked.png";
+   var imgElement = document.getElementById('map');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+        navigator.vibrate(500);
+    })
+
+
     startTime();
     setUser();
 });
