@@ -53,8 +53,8 @@ $(document).ready(function() {
 
     $("#map").click(function() {
               alert(document.getElementById('map').src);
-        var img1 = "file:///Users/johansvedberg/Documents/TNX153/images/clicked.png",
-            img2 = "file:///Users/johansvedberg/Documents/TNX153/images/notclicked.png";
+        var img1 = "https://johansvedberg.github.io/images/clicked.png",
+            img2 = "https://johansvedberg.github.io/images/notclicked.png";
         var imgElement = document.getElementById('map');
 
         imgElement.src = (imgElement.src === img1) ? img2 : img1;
