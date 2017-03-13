@@ -59,7 +59,7 @@ $(document).ready(function() {
 
     $('#people').change(function() {
         var text = document.getElementById("people").value
-        document.getElementById('nbrOfFree').innerHTML = text;
+        document.getElementById('nbrOfFree').innerHTML = parseInt(text) + 1;
     })
 
 
