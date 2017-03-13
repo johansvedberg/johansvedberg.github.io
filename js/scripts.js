@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     $('select').material_select();
     $(".button-collapse").sideNav();
+    $('.modal').modal();
 
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
@@ -46,7 +47,8 @@ $(document).ready(function() {
 
     $("#bookButton").click(function() {
         book();
-        Materialize.toast('Rum bokat!', 2000);
+         $('#modal1').modal('open');
+      //  Materialize.toast('Rum bokat!', 2000);
         navigator.vibrate(500);
     })
 
