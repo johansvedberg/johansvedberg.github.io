@@ -4,6 +4,11 @@ $(document).ready(function() {
     $(".button-collapse").sideNav();
     $('.modal').modal();
 
+
+
+
+
+
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
@@ -47,20 +52,26 @@ $(document).ready(function() {
 
     $("#bookButton").click(function() {
         book();
-         $('#modal1').modal('open');
-      //  Materialize.toast('Rum bokat!', 2000);
+        $('#modal1').modal('open');
+        //  Materialize.toast('Rum bokat!', 2000);
         navigator.vibrate(500);
     })
+
+    $('#people').change(function() {
+        var text = document.getElementById("people").value
+        document.getElementById('nbrOfFree').innerHTML = text;
+    })
+
 
 
     $("#map").click(function() {
 
-      if ($("#map").attr("src") == "images/notclicked.png") {
+        if ($("#map").attr("src") == "images/notclicked.png") {
             $("#map").attr("src", "images/clicked.png");
 
-      }else {
-        $("#map").attr("src", "images/notclicked.png");
-      }
+        } else {
+            $("#map").attr("src", "images/notclicked.png");
+        }
 
         navigator.vibrate(500);
     });

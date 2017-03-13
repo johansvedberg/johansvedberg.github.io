@@ -43,30 +43,50 @@
             <h5>Hitta studieplats:</h5>
         </div>
 
-          <h5>Det finns <b>5</b> lediga grupprum som passar dina preferenser.</h5>
+          <h5>Det finns <span id="nbrOfFree"> 4  </span> lediga grupprum som passar dina preferenser.</h5>
+          <div class="input-field col s12">
+           <select id="people" onchange="freeSelect(this.value)">
+             <option value="" disabled selected>Hur många behöver plats?</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="3">4</option>
+             <option value="3">5</option>
+             <option value="3">6</option>
+             <option value="3">7</option>
+             <option value="3">8</option>
+             <option value="3">9</option>
+             <option value="3">10</option>
+           </select>
 
-    </div>
+         </div>
+
+
 
     <div class="row">
 
-        <div class="col s12 m6 l6">
+
+        <div class="col s12 m12 l12">
             <div class="card-panel" id="bookButton">
                 <span class="white-text">Boka ett grupprum</span>
             </div>
         </div>
+
+
 
     </div>
 
     <div id="modal1" class="modal">
         <div class="modal-content">
             <h4>Grupprum bokat!</h4>
-            <p>DU har bokat grupprummer Shannon, som ligger i Ehuset.</p>
+            <p>Du har bokat grupprummet Shannon, som ligger i Ehuset.</p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Färdig</a>
+            <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Färdig</a>
             <a href="map.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Visa på karta</a>
         </div>
     </div>
+        </div>
 
 
     <!--
